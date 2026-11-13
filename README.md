@@ -1,94 +1,59 @@
-# HLD Prep — Foundational Vocabulary (Layer 1)
+# HLD Prep — Hello Interview "System Design in a Hurry" (3-4 YOE)
 
-Priority: **P0** = must know cold (comes up in almost every interview) · **P1** = comes up often, needed for trade-off depth · **P2** = situational, lower priority given time constraints.
+We follow only the Hello Interview topic list. Spine: the [free written guides](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction) (the left menu). The paid [course](https://www.hellointerview.com/learn/courses/system-design) is the same material with videos and quizzes. Pages marked Premium are locked.
 
 Status legend: `[ ]` not started · `[~]` in progress · `[x]` done
 
-Practice layer (Layer 2 — full system designs + follow-up questions) lives separately in `practice-systems/` once you're ready to start it. This README only tracks Layer 1.
+Each topic gets its own numbered folder with `notes.md` (5-step framework) and, only on request, `practice.md`.
 
----
+### Phase 1 — Frame (1-2 days)
+- [ ] 1. [How to prepare](https://www.hellointerview.com/learn/system-design/in-a-hurry/how-to-prepare)
+- [ ] 2. [Delivery framework](https://www.hellointerview.com/learn/system-design/in-a-hurry/delivery)
+- [ ] 3. [Numbers to know (estimation)](https://www.hellointerview.com/learn/system-design/core-concepts/numbers-to-know)
 
-## 1. Requirements & Estimation — **P0**
-- [ ] Functional vs non-functional requirements
-- [ ] Back-of-envelope estimation (QPS, storage, bandwidth, memory)
-- [ ] Read-heavy vs write-heavy classification
-- [ ] Latency vs throughput vs availability trade-offs
-- [ ] Explicitly scoping out what you won't design
+### Phase 2 — Core concepts (~1 week)
+- [ ] 4. [Networking essentials](https://www.hellointerview.com/learn/system-design/core-concepts/networking-essentials)
+- [ ] 5. [API design](https://www.hellointerview.com/learn/system-design/core-concepts/api-design)
+- [ ] 6. [Data modeling](https://www.hellointerview.com/learn/system-design/core-concepts/data-modeling)
+- [ ] 7. [DB indexing](https://www.hellointerview.com/learn/system-design/core-concepts/db-indexing)
+- [ ] 8. [Caching](https://www.hellointerview.com/learn/system-design/core-concepts/caching)
+- [ ] 9. [Sharding](https://www.hellointerview.com/learn/system-design/core-concepts/sharding)
+- [ ] 10. [Consistent hashing](https://www.hellointerview.com/learn/system-design/core-concepts/consistent-hashing)
+- [ ] 11. [CAP theorem](https://www.hellointerview.com/learn/system-design/core-concepts/cap-theorem)
 
-## 2. APIs, Load Balancers, Gateway — **P0**
-- [ ] REST vs gRPC vs GraphQL vs WebSockets — when each fits
-- [ ] API design basics (endpoints, pagination, idempotency keys)
-- [ ] L4 vs L7 load balancing
-- [ ] Load balancing algorithms (round robin, least connections, consistent hashing)
-- [ ] API Gateway responsibilities (auth, rate limiting, routing)
-- [ ] Reverse proxy basics
+### Phase 3 — Patterns (~1 week)
+- [ ] 12. [Scaling reads](https://www.hellointerview.com/learn/system-design/patterns/scaling-reads)
+- [ ] 13. [Scaling writes](https://www.hellointerview.com/learn/system-design/patterns/scaling-writes)
+- [ ] 14. [Dealing with contention](https://www.hellointerview.com/learn/system-design/patterns/dealing-with-contention)
+- [ ] 15. [Realtime updates](https://www.hellointerview.com/learn/system-design/patterns/realtime-updates) (Premium)
+- [ ] 16. [Long-running tasks](https://www.hellointerview.com/learn/system-design/patterns/long-running-tasks)
+- [ ] 17. [Multi-step processes](https://www.hellointerview.com/learn/system-design/patterns/multi-step-processes)
+- [ ] 18. [Large blobs](https://www.hellointerview.com/learn/system-design/patterns/large-blobs)
 
-## 3. Databases — **P0**
-- [ ] SQL vs NoSQL — when to use which
-- [ ] Indexing (B-tree, hash index, composite index)
-- [ ] Normalization vs denormalization
-- [ ] ACID transactions
-- [ ] NoSQL types (key-value, document, column-family, graph) and use cases
-- [ ] Letting query patterns drive schema design
+### Phase 4 — Key technologies (4-5 days)
+- [ ] 19. [Key technologies overview](https://www.hellointerview.com/learn/system-design/in-a-hurry/key-technologies)
+- [ ] 20. [Redis](https://www.hellointerview.com/learn/system-design/deep-dives/redis)
+- [ ] 21. [Postgres](https://www.hellointerview.com/learn/system-design/deep-dives/postgres)
+- [ ] 22. [Kafka](https://www.hellointerview.com/learn/system-design/deep-dives/kafka)
+- [ ] 23. One NoSQL: [DynamoDB](https://www.hellointerview.com/learn/system-design/deep-dives/dynamodb) or [Cassandra](https://www.hellointerview.com/learn/system-design/deep-dives/cassandra)
+- [ ] 24. Optional: [Elasticsearch](https://www.hellointerview.com/learn/system-design/deep-dives/elasticsearch), [API gateway](https://www.hellointerview.com/learn/system-design/deep-dives/api-gateway)
 
-## 4. Caching — **P0**
-- [ ] Cache placement (client, CDN, app-level, DB-level)
-- [ ] Cache-aside vs write-through vs write-behind
-- [ ] Eviction policies (LRU, LFU, TTL)
-- [ ] Cache invalidation strategies
-- [ ] Distributed caching basics (Redis cluster concepts)
-- [ ] Thundering herd / cache stampede problem
+### Phase 5 — Problem breakdowns (2-3 weeks, in this order)
+- [ ] 25. [Bitly](https://www.hellointerview.com/learn/system-design/problem-breakdowns/bitly) (warm-up)
+- [ ] 26. [Distributed rate limiter](https://www.hellointerview.com/learn/system-design/problem-breakdowns/distributed-rate-limiter)
+- [ ] 27. [News feed](https://www.hellointerview.com/learn/system-design/problem-breakdowns/fb-news-feed)
+- [ ] 28. [WhatsApp](https://www.hellointerview.com/learn/system-design/problem-breakdowns/whatsapp)
+- [ ] 29. [Notification system](https://www.hellointerview.com/learn/system-design/problem-breakdowns/notification-system)
+- [ ] 30. [Ticketmaster](https://www.hellointerview.com/learn/system-design/problem-breakdowns/ticketmaster)
+- [ ] 31. [Flash sale](https://www.hellointerview.com/learn/system-design/problem-breakdowns/flash-sale)
+- [ ] 32. [Uber](https://www.hellointerview.com/learn/system-design/problem-breakdowns/uber)
+- [ ] 33. [Payment system](https://www.hellointerview.com/learn/system-design/problem-breakdowns/payment-system)
+- [ ] 34. [Distributed cache](https://www.hellointerview.com/learn/system-design/problem-breakdowns/distributed-cache)
+- [ ] 35. [Job scheduler](https://www.hellointerview.com/learn/system-design/problem-breakdowns/job-scheduler)
+- [ ] 36. Optional: [YouTube](https://www.hellointerview.com/learn/system-design/problem-breakdowns/youtube), [Dropbox](https://www.hellointerview.com/learn/system-design/problem-breakdowns/dropbox), [Web crawler](https://www.hellointerview.com/learn/system-design/problem-breakdowns/web-crawler)
 
-## 5. Scaling Patterns — **P0**
-- [ ] Horizontal vs vertical scaling
-- [ ] Stateless service design
-- [ ] Rate limiting algorithms (token bucket, leaky bucket, sliding window)
-- [ ] Backpressure and load shedding
-- [ ] Autoscaling basics
+### Phase 6 — Fill gaps and rehearse (ongoing)
+- [ ] 37. Real architectures: [Discord](https://www.hellointerview.com/learn/system-design/in-the-wild/discord-messages-scylladb), [Slack job queue](https://www.hellointerview.com/learn/system-design/in-the-wild/slack-job-queue)
+- [ ] 38. Spoken mock runs of `practice.md` answers (ideally with a person)
 
-## 6. Replication & Sharding — **P1**
-- [ ] Leader-follower replication
-- [ ] Synchronous vs asynchronous replication
-- [ ] Quorum reads/writes
-- [ ] Sharding strategies (range, hash, directory-based)
-- [ ] Consistent hashing
-- [ ] Rebalancing and hot partitions
-
-## 7. Consistency & CAP — **P1**
-- [ ] CAP theorem
-- [ ] PACELC
-- [ ] Strong vs eventual consistency
-- [ ] Read-your-writes / causal consistency
-- [ ] Conflict resolution (last-write-wins, vector clocks, CRDTs)
-
-## 8. Messaging & Async Processing — **P1**
-- [ ] Queues vs pub-sub vs streams
-- [ ] Delivery guarantees (at-least-once, exactly-once, at-most-once)
-- [ ] Idempotency
-- [ ] Dead-letter queues and retries
-- [ ] Fan-out patterns (push vs pull vs hybrid)
-
-## 9. Reliability & Observability — **P1**
-- [ ] Failover and redundancy
-- [ ] Retries with backoff, circuit breakers, timeouts
-- [ ] Health checks
-- [ ] Monitoring: metrics, logs, traces
-- [ ] Alerting thresholds (what to alert on, and why)
-- [ ] Incident/runbook thinking
-
-## 10. CDN & Edge — **P2**
-- [ ] How CDNs work (edge caching, origin pull)
-- [ ] Static vs dynamic content delivery
-- [ ] Geo-distribution and latency reduction
-
-## 11. Security Basics — **P2**
-- [ ] Authentication vs authorization
-- [ ] OAuth2/JWT basics
-- [ ] Encryption in transit (TLS) vs at rest
-- [ ] Basic threat considerations (abuse via rate limits, injection)
-
----
-
-## Suggested order of attack
-
-Given your time constraint (HLD is second priority after LLD/DSA/Go internals), work top to bottom — P0 topics (1-5) first since they alone cover ~80% of interview ground, then P1 (6-9), then P2 (10-11) only if time remains.
+Skip until the above is solid: Flink, ZooKeeper, Temporal, vector DBs, time-series DBs, CDC, proximity search, big-data data structures.
