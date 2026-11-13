@@ -8,8 +8,8 @@ Each topic gets its own numbered folder with `notes.md` (5-step framework) and, 
 
 ### Phase 1 — Frame (1-2 days)
 - [ ] 1. [How to prepare](https://www.hellointerview.com/learn/system-design/in-a-hurry/how-to-prepare)
-- [ ] 2. [Delivery framework](https://www.hellointerview.com/learn/system-design/in-a-hurry/delivery)
-- [ ] 3. [Numbers to know (estimation)](https://www.hellointerview.com/learn/system-design/core-concepts/numbers-to-know)
+- [x] 2. [Delivery framework](https://www.hellointerview.com/learn/system-design/in-a-hurry/delivery)
+- [x] 3. [Numbers to know (estimation)](https://www.hellointerview.com/learn/system-design/core-concepts/numbers-to-know)
 
 ### Phase 2 — Core concepts (~1 week)
 - [ ] 4. [Networking essentials](https://www.hellointerview.com/learn/system-design/core-concepts/networking-essentials)
